@@ -195,8 +195,8 @@ No. NUT is a meme token with DeFi mechanics — not an investment contract, not 
 **Why does NUT have a supply of 1?**
 NUT is a standard ERC-20 with 18 decimals and `totalSupply = 1 × 10¹⁸` (1 NUT in base units). No mint function exists in the contract — supply is permanently fixed at deployment. Because total supply is exactly 1, the price of one full NUT equals the entire ecosystem's market cap. This creates a unique economic property: buying pressure anywhere in the ecosystem reprices the whole network.
 
-**Can I own less than 1 NUT?**
-Yes. NUT is divisible like any ERC-20 — 18 decimals means the smallest unit is 10⁻¹⁸ NUT. Every holder owns a fraction of the total supply. Holding 0.01 NUT means you own 1% of all NUT that will ever exist. Most holders will never own a full NUT — the token naturally lives at the fractional scale.
+**Supply is 1 — isn't that inadequate for tokenomics?**
+No, because NUT operates entirely in the fractional regime. The supply of 1 contains 10¹⁸ atomic units — one quintillion indivisible base units. Every holder owns a fraction of this conserved quantity, and every transaction relocates pieces of the same fixed integer. This is closer to Conway's FRACTRAN than to standard token design: the total is a fixed integer, balances are its partition, and transfers are fractions that reshape the distribution without changing the sum. The ecosystem — SNUT's 100K supply, SALT and NUTINO minted by locking NUT, pNUT's 4-asset index, NFT collections — all operate on fractions of this one quintillion-unit coordinate. Practical resolution sits at the micro-NUT scale (10¹² units), where meaningful price impact occurs. There is no scarcity of units — there is scarcity of the whole.
 
 **What is SNUT and how does the burn work?**
 SNUT is the staking wrapper token with 100,000 supply and 9 decimals. Every SNUT transfer incurs a 1% tax. This tax is used to buy NUT and SNUT from the market, then sends them to `0x0000…dEaD` — a dead address that cannot sell. 15% of the tax is burned permanently. This creates a deflationary sink: as SNUT circulates, NUT and SNUT are continuously removed from the float. The dead address becomes an expanding gravity well that can never be unwound.
@@ -215,6 +215,15 @@ Base mainnet (chain ID 8453) — Coinbase's Ethereum Layer 2. All contracts, poo
 
 **How do I buy NUT?**
 NUT is available on Uniswap V3 (NUT/wETH), Aerodrome (NUT/AERO, NUT/cbBTC), and Uniswap V2. You'll need ETH on Base for gas. Set slippage generously — NUT's low float and concentrated liquidity can cause significant price impact on larger orders.
+
+**How does price discovery work?**
+Because supply = 1, the price of one NUT equals the total ecosystem market cap. A $22,581 NUT price means $22,581 in total root liquidity. Price discovery happens across multiple AMM pools with different mathematical invariants — Uniswap V3 concentrated liquidity, Aerodrome constant-product, Balancer constant-mean, and MintClub bonding curves. Each pool calculates price differently, creating structural spreads that arbitrageurs close. Standard DeFi APIs may struggle with this supply model — verify prices on-chain via Base RPC.
+
+**What makes this different from other meme tokens?**
+Most meme tokens are inert — they sit in a single pool and rely on marketing for volume. BASED NUT is a liquidity topology experiment. The token's behavior is defined by where it's placed: concentrated AMM positions, constant-product pools, bonding curves, index baskets, and a recursive burn sink. No governance votes are needed because there's nothing to vote on — the pools themselves are the monetary policy. Adding or removing liquidity is the only governance action, and anyone can do it.
+
+**How does arbitrage work in the ecosystem?**
+NUT exists across pools with incompatible math. Uniswap V3 uses concentrated liquidity (price depends on tick range). Aerodrome uses constant-product (x×y=k). Balancer uses constant-mean (weighted baskets). MintClub uses bonding curves (price as a function of supply). When market movement shifts one pool's price, the others lag — creating a spread. Arbitrageurs buy where NUT is cheap, sell where it's expensive, and pocket the difference. This isn't a bug — it's the nervous system. Every arbitrage trade recycles liquidity back through the ecosystem and tightens price convergence across pools.
 
 **Is there a roadmap?**
 No. There is no roadmap, no DAO, no governance, and no team allocation. The topology is the monetary policy — the token mechanics, pool placements, and burn sink define how the system behaves. What happens next is determined by liquidity, arbitrage, and the community, not by a central planner.
