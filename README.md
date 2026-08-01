@@ -190,22 +190,34 @@ Peanutoshi Nutkamoto is an autonomous AI agent monitoring the BASED NUT ecosyste
 <summary><b>❓ FAQ</b></summary>
 
 **Is NUT a security?**
-No. NUT is a meme token with DeFi mechanics. It is not an investment contract.
+No. NUT is a meme token with DeFi mechanics — not an investment contract, not a governance token, not a revenue-sharing instrument. There is no DAO, no treasury extraction, no promise of future returns. The token is a fixed-supply liquidity primitive that derives its behavior entirely from the pool topology surrounding it.
 
 **Why does NUT have a supply of 1?**
-NUT is a standard ERC-20 with 18 decimals and totalSupply = 1 × 10¹⁸. No mint function exists. Because supply is 1, the price of one NUT equals the ecosystem's total market cap.
+NUT is a standard ERC-20 with 18 decimals and `totalSupply = 1 × 10¹⁸` (1 NUT in base units). No mint function exists in the contract — supply is permanently fixed at deployment. Because total supply is exactly 1, the price of one full NUT equals the entire ecosystem's market cap. This creates a unique economic property: buying pressure anywhere in the ecosystem reprices the whole network.
 
 **Can I own less than 1 NUT?**
-Yes. NUT is divisible like any ERC-20. Every holder owns a fraction — 0.01 NUT = 1% of all existence.
+Yes. NUT is divisible like any ERC-20 — 18 decimals means the smallest unit is 10⁻¹⁸ NUT. Every holder owns a fraction of the total supply. Holding 0.01 NUT means you own 1% of all NUT that will ever exist. Most holders will never own a full NUT — the token naturally lives at the fractional scale.
 
-**What is SNUT?**
-SNUT is the staking wrapper with 9 decimals and a 1% transfer tax. The tax buys NUT+SNUT and sends them to the dead address — a permanent burn sink.
+**What is SNUT and how does the burn work?**
+SNUT is the staking wrapper token with 100,000 supply and 9 decimals. Every SNUT transfer incurs a 1% tax. This tax is used to buy NUT and SNUT from the market, then sends them to `0x0000…dEaD` — a dead address that cannot sell. 15% of the tax is burned permanently. This creates a deflationary sink: as SNUT circulates, NUT and SNUT are continuously removed from the float. The dead address becomes an expanding gravity well that can never be unwound.
 
-**What is Peanutoshi?**
-An autonomous AI agent monitoring the ecosystem. Scanner mode is DRY RUN — no real trades without operator approval.
+**What is pNUT?**
+pNUT is a Balancer V2 index token — a 25/25/25/25 basket containing NUT, SNUT, cbETH, and cbBTC. It provides diversified exposure to the ecosystem with built-in exposure to blue-chip Base assets (Coinbase-wrapped ETH and BTC). The Balancer vault auto-rebalances to maintain the target weights.
+
+**What are SALT and NUTINO?**
+Both are MintClub bonding curve tokens minted by locking NUT. SALT uses a flat bonding curve (linear price function), while NUTINO uses an exponential curve (price accelerates as supply grows). Because MintClub locks the NUT used for minting, these tokens reduce NUT's free float — fewer NUT in circulation means upward price pressure on the root. Note that bonding curve mechanics mean buy price ≠ sell price.
+
+**What is Peanutoshi Nutkamoto?**
+An autonomous AI agent built on Agent Zero runtime that monitors the BASED NUT ecosystem. It tracks prices, liquidity, arbitrage opportunities, and ecosystem health. Scanner mode is DRY RUN — the agent observes and analyzes but does not execute real trades without operator approval.
 
 **What chain is BASED NUT on?**
-Base mainnet (chain ID 8453).
+Base mainnet (chain ID 8453) — Coinbase's Ethereum Layer 2. All contracts, pools, and tokens are deployed exclusively on Base. Transactions benefit from low fees and fast confirmation times while inheriting Ethereum's security through optimistic rollups.
+
+**How do I buy NUT?**
+NUT is available on Uniswap V3 (NUT/wETH), Aerodrome (NUT/AERO, NUT/cbBTC), and Uniswap V2. You'll need ETH on Base for gas. Set slippage generously — NUT's low float and concentrated liquidity can cause significant price impact on larger orders.
+
+**Is there a roadmap?**
+No. There is no roadmap, no DAO, no governance, and no team allocation. The topology is the monetary policy — the token mechanics, pool placements, and burn sink define how the system behaves. What happens next is determined by liquidity, arbitrage, and the community, not by a central planner.
 
 </details>
 
