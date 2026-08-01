@@ -74,7 +74,7 @@ The ecosystem uses a tree metaphor. NUT is the trunk. SNUT and pNUT are branches
 
 Three forces keep the ecosystem in motion:
 
-1. **Conservation** — No new NUT can ever be minted. Nested token minting locks existing NUT in bonding curves, reducing float and repricing the root upward.
+1. **Conservation** — No new NUT can ever be minted. Nested token minting locks existing NUT in bonding curves, permanently removing it from tradeable circulation. Supply is conserved — what exists is all that will ever exist.
 2. **Reflexive Arbitrage** — NUT sits across pools with different math (Uniswap V3 concentrated, Aerodrome constant-product, Balancer constant-mean, MintClub bonding curves). Price gaps are structural. Arbitrageurs are the nervous system.
 3. **Deflationary Burn Sink** — SNUT's 1% tax buys NUT+SNUT and sends to `0x...dEaD`. The dead address can't sell. Burned units are permanently locked — an expanding gravity well.
 
@@ -205,7 +205,7 @@ SNUT is the staking wrapper token with 100,000 supply and 9 decimals. Every SNUT
 pNUT is a Balancer V2 index token — a 25/25/25/25 basket containing NUT, SNUT, cbETH, and cbBTC. It provides diversified exposure to the ecosystem with built-in exposure to blue-chip Base assets (Coinbase-wrapped ETH and BTC). The Balancer vault auto-rebalances to maintain the target weights.
 
 **What are SALT and NUTINO?**
-Both are MintClub bonding curve tokens minted by locking NUT. SALT uses a flat bonding curve (linear price function), while NUTINO uses an exponential curve (price accelerates as supply grows). Because MintClub locks the NUT used for minting, these tokens reduce NUT's free float — fewer NUT in circulation means upward price pressure on the root. Note that bonding curve mechanics mean buy price ≠ sell price.
+Both are MintClub bonding curve tokens minted by locking NUT. SALT uses a flat bonding curve (linear price function), while NUTINO uses an exponential curve (price accelerates as supply grows). Because MintClub locks the NUT used for minting, these tokens reduce NUT's free float — locked NUT cannot be sold or moved until redemption. This puts supply pressure on the tradeable pool. Note that bonding curve mechanics mean buy price ≠ sell price.
 
 **What is Peanutoshi Nutkamoto?**
 An autonomous AI agent built on Agent Zero runtime that monitors the BASED NUT ecosystem. It tracks prices, liquidity, arbitrage opportunities, and ecosystem health. Scanner mode is DRY RUN — the agent observes and analyzes but does not execute real trades without operator approval.
