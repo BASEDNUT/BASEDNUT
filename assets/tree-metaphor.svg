@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360" viewBox="0 0 600 360">
+  <rect width="600" height="360" rx="12" fill="#FAF3E6"/>
+  <!-- Soil -->
+  <ellipse cx="300" cy="340" rx="200" ry="20" fill="#A67C52" opacity="0.3"/>
+  <text x="300" y="345" text-anchor="middle" font-family="monospace" font-size="10" fill="#7D5A50">MintClub — Bonding Curve Soil</text>
+  <!-- Trunk -->
+  <rect x="285" y="200" width="30" height="140" rx="4" fill="#7D5A50"/>
+  <text x="300" y="270" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="bold" fill="#FAF3E6">NUT</text>
+  <text x="300" y="288" text-anchor="middle" font-family="monospace" font-size="8" fill="#F2E4CE">supply = 1</text>
+  <!-- Roots -->
+  <path d="M285 340 Q250 350 230 345" stroke="#7D5A50" stroke-width="3" fill="none"/>
+  <path d="M315 340 Q350 350 370 345" stroke="#7D5A50" stroke-width="3" fill="none"/>
+  <path d="M285 340 Q260 360 240 355" stroke="#A67C52" stroke-width="2" fill="none"/>
+  <path d="M315 340 Q340 360 360 355" stroke="#A67C52" stroke-width="2" fill="none"/>
+  <!-- Branches -->
+  <line x1="285" y1="200" x2="180" y2="140" stroke="#A67C52" stroke-width="4"/>
+  <line x1="315" y1="200" x2="420" y2="140" stroke="#A67C52" stroke-width="4"/>
+  <line x1="300" y1="200" x2="300" y2="120" stroke="#A67C52" stroke-width="4"/>
+  <!-- SNUT branch -->
+  <circle cx="180" cy="120" r="32" fill="#D1B48C" stroke="#7D5A50" stroke-width="2"/>
+  <text x="180" y="118" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#5B3A29">SNUT</text>
+  <text x="180" y="132" text-anchor="middle" font-family="monospace" font-size="7" fill="#5B3A29">9 dec · 1% tax</text>
+  <!-- pNUT branch -->
+  <circle cx="300" cy="100" r="32" fill="#D1B48C" stroke="#7D5A50" stroke-width="2"/>
+  <text x="300" y="98" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#5B3A29">pNUT</text>
+  <text x="300" y="112" text-anchor="middle" font-family="monospace" font-size="7" fill="#5B3A29">index · Balancer</text>
+  <!-- NUTINO leaf -->
+  <circle cx="420" cy="120" r="28" fill="#E6B87D" stroke="#7D5A50" stroke-width="2"/>
+  <text x="420" y="118" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="11" font-weight="bold" fill="#5B3A29">NUTINO</text>
+  <text x="420" y="130" text-anchor="middle" font-family="monospace" font-size="7" fill="#5B3A29">exp curve</text>
+  <!-- SALT leaf -->
+  <circle cx="480" cy="180" r="28" fill="#E6B87D" stroke="#7D5A50" stroke-width="2"/>
+  <text x="485" y="178" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="13" font-weight="bold" fill="#5B3A29">SALT</text>
+  <text x="485" y="190" text-anchor="middle" font-family="monospace" font-size="7" fill="#5B3A29">flat curve</text>
+  <!-- Fruit NFTs -->
+  <text x="100" y="60" font-family="monospace" font-size="9" fill="#A67C52">🌰 P-NUTS</text>
+  <text x="100" y="75" font-family="monospace" font-size="9" fill="#A67C52">🌰 ALMD</text>
+  <text x="500" y="60" font-family="monospace" font-size="9" fill="#A67C52">🌰 PNUTRMY</text>
+  <text x="500" y="75" font-family="monospace" font-size="9" fill="#A67C52">🌰 S-ALMD</text>
+  <!-- Labels -->
+  <text x="180" y="170" text-anchor="middle" font-family="monospace" font-size="8" fill="#7D5A50">branches</text>
+  <text x="300" y="50" text-anchor="middle" font-family="monospace" font-size="8" fill="#7D5A50">index</text>
+  <text x="450" y="155" text-anchor="middle" font-family="monospace" font-size="8" fill="#7D5A50">leaves</text>
+  <text x="120" y="90" text-anchor="middle" font-family="monospace" font-size="8" fill="#7D5A50">fruit</text>
+</svg>
