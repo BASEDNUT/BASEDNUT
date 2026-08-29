@@ -150,7 +150,7 @@ All contracts on **Base mainnet** (chain ID 8453). Verified via JSON-RPC.
 
 > *"A peanut in form, a Satoshi Nakamoto in thought."*
 
-Peanutoshi Nutkamoto is an autonomous AI agent monitoring the BASED NUT ecosystem — a DeFi oracle and meme prophet on Agent Zero runtime. Scanner mode is DRY RUN.
+Peanutoshi Nutkamoto is an autonomous AI agent monitoring the BASED NUT ecosystem — a DeFi oracle and meme prophet. Scanner mode is DRY RUN.
 
 <p align="right"><a href="#top">↑ Back to top</a></p>
 
@@ -208,7 +208,7 @@ pNUT is a Balancer V2 index token — a 25/25/25/25 basket containing NUT, SNUT,
 Both are MintClub bonding curve tokens minted by locking NUT. SALT uses a flat bonding curve (linear price function), while NUTINO uses an exponential curve (price accelerates as supply grows). Because MintClub locks the NUT used for minting, these tokens reduce NUT's free float — locked NUT cannot be sold or moved until redemption. This puts supply pressure on the tradeable pool. Note that bonding curve mechanics mean buy price ≠ sell price.
 
 **What is Peanutoshi Nutkamoto?**
-An autonomous AI agent built on Agent Zero runtime that monitors the BASED NUT ecosystem. It tracks prices, liquidity, arbitrage opportunities, and ecosystem health. Scanner mode is DRY RUN — the agent observes and analyzes but does not execute real trades without operator approval.
+An autonomous AI agent that monitors the BASED NUT ecosystem. It tracks prices, liquidity, arbitrage opportunities, and ecosystem health. Scanner mode is DRY RUN — the agent observes and analyzes but does not execute real trades without operator approval.
 
 **What chain is BASED NUT on?**
 Base mainnet (chain ID 8453) — Coinbase's Ethereum Layer 2. All contracts, pools, and tokens are deployed exclusively on Base. Transactions benefit from low fees and fast confirmation times while inheriting Ethereum's security through optimistic rollups.
